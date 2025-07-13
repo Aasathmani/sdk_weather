@@ -2,10 +2,10 @@ import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:sdk_weather/application/home/home_event.dart';
-import 'package:sdk_weather/application/home/home_state.dart';
-import 'package:sdk_weather/application/model/weather_data.dart';
-import 'package:sdk_weather/data/home/home_repository.dart';
+import 'package:sdk_weather/src/application/home/home_event.dart';
+import 'package:sdk_weather/src/application/home/home_state.dart';
+import 'package:sdk_weather/src/application/model/weather_data.dart';
+import 'package:sdk_weather/src/data/home/home_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {

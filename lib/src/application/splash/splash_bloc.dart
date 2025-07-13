@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:sdk_weather/application/splash/splash_event.dart';
-import 'package:sdk_weather/application/splash/splash_state.dart';
+import 'package:sdk_weather/src/application/splash/splash_event.dart';
+import 'package:sdk_weather/src/application/splash/splash_state.dart';
 
 class SplashBloc extends Bloc<SplashEvent, SplashState> {
   SplashBloc() : super(SplashState()) {

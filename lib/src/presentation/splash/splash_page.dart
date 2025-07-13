@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sdk_weather/presentation/home/home_page.dart';
+import 'package:sdk_weather/generated/l10n.dart';
+import 'package:sdk_weather/src/core/app_constants.dart';
+import 'package:sdk_weather/src/presentation/home/home_page.dart';
 
 import '../../application/splash/splash_bloc.dart';
 import '../../application/splash/splash_state.dart';
@@ -31,7 +33,26 @@ class _SplashPageState extends State<SplashPage> {
         }
       },
       builder: (context, state) {
-        return Scaffold(body: Center(child: Text("Welcome to Weather App..")),
+        return Scaffold(
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  AppIcons.kAppIcon,
+                  height: Units.kShadowBoxHeight,
+                  width: Units.kShadowBoxHeight,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(Units.kSPadding),
+                  child: Text(
+                    S.current.labelWelcomeToWeatherApp,
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
+              ],
+            ),
+          ),
         );
       },
     );

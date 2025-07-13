@@ -1,4 +1,4 @@
-import 'package:sdk_weather/application/model/weather_data.dart';
+import 'package:sdk_weather/src/application/model/weather_data.dart';
 
 class HomeState {
   String? location;

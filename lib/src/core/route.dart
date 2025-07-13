@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sdk_weather/presentation/home/home_page.dart';
+import 'package:sdk_weather/src/presentation/home/home_page.dart';
 import '../application/splash/splash_bloc.dart';
 import '../presentation/splash/splash_page.dart';
 import 'bloc_provider.dart';

@@ -1,5 +1,6 @@
-import 'package:sdk_weather/application/model/weather_data.dart';
-import 'package:sdk_weather/data/home/home_service.dart';
+
+import 'package:sdk_weather/src/application/model/weather_data.dart';
+import 'package:sdk_weather/src/data/home/home_service.dart';
 
 class HomeRepository {
   static HomeRepository? instance;
